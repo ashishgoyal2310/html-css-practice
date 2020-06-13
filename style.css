@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  /*border: 1px dashed goldenrod;*/
+}
+
+body {
+  font-family: Segoe UI, Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('./cover1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #fff;
+  margin: 0; 
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer-hover:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.center-align {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-menu,
+.sub-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+
+  height: 50px;
+  padding: 8px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  top: 0;
+
+  background-color: rgba( 64, 144, 172, 0.65 );
+  color: #fff;
+}
+
+.sub-header {
+  top: 50px;
+
+  background-color: rgba( 64, 144, 172, 0.25 );
+  color: #fff;
+}
+
+
+/* first Header styling - START */
+.menu-container > span,
+.menu-container > input {
+  padding: 3px;
+  background-color: rgba( 64, 144, 172, 1);
+  border-radius: 2px;
+}
+.menu-container > span:hover {
+  background-color: rgba( 64, 144, 172, 0.5);
+}
+.menu-container > input.menu-search {
+  width: 100px;
+  border: none;
+  outline: none;
+  margin: auto;
+  font-size: 1.09em;
+} 
+.menu-container > input.menu-search:focus {
+  background-color: #fff;
+} 
+
+.menu-container.menu-title {
+  font-size: 1.5em;
+  font-family: "Comic Sans", "Comic Sans MS", cursive;
+}
+/* first Header styling - END */
+
+
+.main-content {
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.training-card-container {
+  padding: 110px 0px 0px 0px;
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+  overflow: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-section {
+  flex-shrink: 0;
+  flex-basis: 240px;
+
+  margin: 0px 5px;
+  border-radius: 5px;
+}
+
+.card {
+  background-color: rgba( 240, 240, 240, 0.9 );
+  padding: 10px 10px 5px;
+  border-radius: 3px;
+  color: #555;
+}
+
+.card > * {
+  margin-bottom: 10px;
+}
+
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+.card .btn {
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card .btn.btn-success {
+  background-color: olive;
+  color: #fff;
+}
+
+.card .btn.btn-danger {
+  background-color: crimson;
+  color: #fff;
+}
+
+.card .card-editable {
+  font-size: 14px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.card .card-editable i {
+  float: right;
+  visibility: hidden;
+}
+
+.card .card-editable:hover i {
+  visibility: visible;
+}
+
+.card .card-editable textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
