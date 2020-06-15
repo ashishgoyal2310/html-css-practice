@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Learning</title>
+        <style type="text/css">
+        * {
+        box-sizing: border-box;
+        font-family: lato, sans-serif;
+        font-size: 14px;
+        }
+        .flex-sp-bt {
+        display: flex;
+        justify-content: space-between;
+        }
+        .note-txt {
+        font-size: 0.85em;
+        }
+        .pointer {
+        cursor: pointer;
+        }
+        label {
+        color: rgba(0, 0, 0, 0.6);
+        }
+        .invitation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 300px;
+        margin: auto;
+        border: 1px solid #aaa;
+        padding: 10px;
+        }
+        .invitation > * {
+        margin: 6px 0px;
+        }
+        .invitation hr {
+        width: 100%;
+        color: green;
+        }
+        .invitation .header {
+        text-align: center;
+        }
+        .invitation .form-input {
+        border: 1px solid #aaa;
+        padding: 8px;
+        font-size: 12px;
+        }
+        .invitation input[type="submit"] {
+        border: transparent;
+        background-color: #eee;
+        padding: 8px;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form class="invitation">
+                <div class="header">
+                    <label>Invide to Board</label>
+                    <span class="pointer" style="float: right;">x</span>
+                </div>
+                <hr>
+                <input type="text" name="username" class="form-input" placeholder="Email address or name">
+                <textarea name="desc" rows="6" class="form-input"></textarea>
+                <input type="submit" class="pointer" value="Send Invitation">
+                <hr>
+                <div>
+                    <div class="flex-sp-bt">
+                        <label><b>Invite with link</b></label><span><a href="#">Create Link</a> </span>
+                    </div>
+                    <label class="note-txt">Anyonce with this link can join as board member</label>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
